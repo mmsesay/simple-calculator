@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <script src="./index.js" defer></script>
+  <title>Calculator</title>
+</head>
+<body>
+  <main class="bg-blue-700 h-screen">
+    <p class="text-center text-white text-4xl p-10 font-bold">Calculator Program</p>
+
+    <div class="card-container h-5/6 flex items-center justify-center overflow-y-scroll">
+      <div class="card bg-white w-1/2 h-2/3">
+        <div class="score-board bg-gray-600 h-28 text-white text-3xl font-bold flex items-center justify-end p-5">
+          <p class="result"></p>
+        </div>
+        <div class="grid grid-cols-4 gap-4 bg-black h-full overflow-hidden p-5 keypad">
+          <button name="AC" class="bg-white w-22 rounded">AC</button>
+          <button name="DEL" class="bg-white w-22 rounded">DEL</button>
+          <button name="%" class="bg-white w-22 rounded">%</button>
+          <button name="/" class="bg-white w-22 rounded">/</button>
+          <button name="7" class="bg-white w-22 rounded">7</button>
+          <button name="8" class="bg-white w-22 rounded">8</button>
+          <button name="9" class="bg-white w-22 rounded">9</button>
+          <button name="*" class="bg-white w-22 rounded">*</button>
+          <button name="4" class="bg-white w-22 rounded">4</button>
+          <button name="5" class="bg-white w-22 rounded">5</button>
+          <button name="6" class="bg-white w-22 rounded">6</button>
+          <button name="-" class="bg-white w-22 rounded">-</button>
+          <button name="1" class="bg-white w-22 rounded">1</button>
+          <button name="2" class="bg-white w-22 rounded">2</button>
+          <button name="3" class="bg-white w-22 rounded">3</button>
+          <button name="+" class="bg-white w-22 rounded">+</button>
+          <button name="0" class="bg-white w-22 rounded">0</button>
+          <button name="." class="bg-white w-22 rounded">.</button>
+          <button name="=" class="bg-white w-22 rounded">=</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

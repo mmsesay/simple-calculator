@@ -1,0 +1,14 @@
+{
+  "name": "calculatortest",
+  "version": "1.0.0",
+  "description": "A simple calculator with jest library",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --testPathPattern=__tests__/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.2.5"
+  }
+}
