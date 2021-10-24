@@ -14,12 +14,12 @@
   <main class="bg-blue-700 h-screen">
     <p class="text-center text-white text-4xl p-10 font-bold">Calculator Program</p>
 
-    <div class="card-container h-5/6 flex items-center justify-center overflow-y-scroll">
-      <div class="card bg-white w-1/2 h-2/3">
+    <div class="card-container h-5/6 flex items-center justify-center overflow-hidden -mt-20">
+      <div class="card bg-white w-1/2 md:w-2/4 h-2/3">
         <div class="score-board bg-gray-600 h-28 text-white text-3xl font-bold flex items-center justify-end p-5">
           <p class="result"></p>
         </div>
-        <div class="grid grid-cols-4 gap-4 bg-black h-full overflow-hidden p-5 keypad">
+        <div class="grid grid-cols-4 gap-4 bg-black h-full p-5 keypad overflow-hidden">
           <button name="AC" class="bg-white w-22 rounded">AC</button>
           <button name="DEL" class="bg-white w-22 rounded">DEL</button>
           <button name="%" class="bg-white w-22 rounded">%</button>
@@ -36,7 +36,7 @@
           <button name="2" class="bg-white w-22 rounded">2</button>
           <button name="3" class="bg-white w-22 rounded">3</button>
           <button name="+" class="bg-white w-22 rounded">+</button>
-          <button name="0" class="bg-white w-22 rounded">0</button>
+          <button name="0" class="bg-white w-22 rounded col-span-2">0</button>
           <button name="." class="bg-white w-22 rounded">.</button>
           <button name="=" class="bg-white w-22 rounded">=</button>
         </div>

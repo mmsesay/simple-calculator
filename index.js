@@ -6,7 +6,6 @@ const displayResult = (result) => {
 };
 
 let bank = '';
-let currentValue = 0;
 
 const subtract = (arg1, arg2) => {
   if (arg1 && arg2) {
@@ -15,7 +14,7 @@ const subtract = (arg1, arg2) => {
   }
 };
 
-const add = (arg1, arg2 = null) => {
+const add = (arg1, arg2) => {
   if (arg1 && arg2) {
     bank = arg1 + arg2;
     displayResult(bank);
@@ -40,8 +39,7 @@ const divide = (arg1, arg2) => {
 const mod = (arg1, arg2 = null) => {
   if (arg1) {
     bank = arg1 / 100;
-    currentValue = bank;
-    displayResult(currentValue);
+    displayResult(bank);
   } 
 
   if (arg2) {
@@ -72,7 +70,6 @@ const handleCalculation = (firstValue, operator, secondValue) => {
       'end of operator';
   }
 };
-
 
 let firstValue = 0;
 let secondValue = 0;
